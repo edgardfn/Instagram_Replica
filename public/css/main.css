@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+/*
+body,
+html {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box; 
+  
+  height: 100vh;
+}
+*/
+
+
+
+/* CABEÇALHO */
+
+header {
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); /* uma sombra ao redor do bloco header */
+}
+
+body {
+
+
+	height: 100vh;
+
+	width: 100vw;
+
+	
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+    color: #000;
+
+	/* centralizar conteudo part1: */
+	display: block;
+}
+
+body .container {
+
+	/* centralizar conteudo part2: */
+	margin: 0 auto;
+	width: 728px;
+
+	
+}
+
+/* conteudo do cabeçalho:  */
+.content {
+
+	/* deixar imagens do cabeçalho na mesma linha: */
+	display: flex;
+	justify-content: space-between; /* ESPAÇO NO MEIO DE DOS ELEMENTOS */
+
+	padding: 8px 16px;
+}
+
+
+
+
+
+
+/* botão direct do cabeçalho: */
+.header__button {
+	
+	border: none; /* tirar borda do botão do header */
+
+	background-color: transparent; /* fundo do botão da imagem transparente. */
+}	
+
+/* link imagem header: */
+.header__img {
+	height: 40px;
+
+	text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* imagem header: */
+.header__img img {
+	height: 40px;
+}
+
+
+/* ----- STORIES: ----- */
+
+.container--big {
+	height: 110px; /* altera tamanho do div dos usuários que é maior que o cabeçalho. */
+
+}
+
+.stories {
+
+	
+
+	align-items: center;
+    display: flex;
+    justify-content: flex-start;
+	width: 100%;
+	
+	height: 100%;
+}
+
+.stories__user img {
+
+	height: 100%;
+	width: 100%;
+	
+   
+    border: 0;
+
+	display: flex;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+/* LINK A : */
+.stories__user {
+	height: 78px;
+	width: 78px;
+	
+	border-radius: 100%;
+	
+	
+    display: flex;
+    
+	overflow: hidden;
+	
+	margin: 0 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SPAN: */
+.stories__user__wrapper {
+	height: 72px;
+	width: 72px;
+	
+	border-radius: 100%;
+    border: 2px solid white;
+    display: inline-block;
+	overflow: hidden;
+	
+}
+
+.stories__user img {
+	height: 100%;
+	width: 100%;
+	
+	border: 0;
+
+}
+
+.stories__user--active {
+	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%); /* cor diferente ao redor da imagem da Gamora */
+}
+
+/* ***** FEED ****** */
+
+/* estrutura do feed */
+
+
+
+.card {
+	
+	border-radius: 1%;
+
+	display: flex;
+    flex-direction: column;
+}
+
+/* elementos do cabeçalho do feed */
+.card__header {
+	display: flex; /* deixar itens do cabeçalho todos na mesma linha */
+
+	align-items: center; /* alinhar itens ao centro do eixo x */
+
+	justify-content: space-between; 
+	
+	padding: 8px;
+	box-sizing: border-box; /* corrige propridade padrão quando coloca preenchimentos, padding */
+	
+	
+	
+}
+
+/*  imagem user e nome do cabeçalho do feed */
+.user__cardheader {
+	
+	display: flex;
+	align-items: center; 
+}
+
+.user__card {
+	height: 40px;
+	width: 40px;
+
+	margin-right: 8px;
+}
+
+/* imagem do usuario do cabeçalho do feed: */
+.user__card  img{
+	width: 100%;
+	height: 100%;
+
+	border-radius: 100%;
+
+	
+}
+
+.imagem__post img {
+	overflow: hidden;
+    margin: 0;
+    height: auto;
+	width: 100%;
+	
+	
+}
+
+.footer__card {
+	
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+	
+}
+
+.card__like {
+	display: flex;
+	margin-left: 8px;
+}
+
+.post__control {
+	padding: 1px 6px;
+	box-sizing: border-box; 
+}
+
+.user__likecard img {
+	width: 30px;
+	height: 30px;
+
+	margin: 0 8px;
+
+	border-radius: 100%;
+
+	
+}
+
+.footer__card i {
+	color: black;
+	opacity: 0.3;
+
+	width: 100%;
+	height: 100%;
+}
+
+.card__footer {
+	display: flex;
+	align-items: center;
+}
+
+.card__footer p {
+	font-size: 12px;
+}
+
+.post {
+	background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.container--post {
+	border: 0;
+}
+
+.card__footer a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
